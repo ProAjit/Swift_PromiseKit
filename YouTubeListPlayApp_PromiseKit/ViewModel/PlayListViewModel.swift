@@ -20,23 +20,26 @@ class TodoViewModel: TodoViewModelProtocol {
     var isLoading: Bool = false
 
     func fetchData() -> Promise<[TodoItem]> {
-          return Promise { seal in
-              let urlString = "https://jsonplaceholder.typicode.com/todos"
-              guard let url = URL(string: urlString) else {
-                  throw UserError.invalidURL
-              }
-              URLSession.shared.dataTask(with: url) { data, _, error in
-                  
-                guard let data = data, let result = try? JSONDecoder().decode([TodoItem].self, from: data) else {
-                  seal.reject(error ?? UserError.invalidData)
-                  self.isLoading = false
-                  return
-                }
-                self.todos = result
+        
+        let urlString = "https://jsonplaceholder.typicode.com/todos"
+        
+        return Promise { seal in
+            guard let url = URL(string: urlString) else {
+               seal.reject(UserError.invalidURL)
+               return
+            }
+            
+            URLSession.shared.dataTask(with: url) { data, _, error in
+              guard let data = data, let result = try? JSONDecoder().decode([TodoItem].self, from: data) else {
+                seal.reject(error ?? UserError.invalidData)
                 self.isLoading = false
-                seal.fulfill(result)
-                  
-              }.resume()
+                return
+              }
+              self.todos = result
+              self.isLoading = false
+              seal.fulfill(result)
+                
+            }.resume()
         }
     }
     
