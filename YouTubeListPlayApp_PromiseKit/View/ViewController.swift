@@ -23,18 +23,7 @@ class ViewController: UIViewController {
         loadUI()
         setupActivityIndicator()
         showLoadingIndicator()
-
-        // Example usage:
-        viewModel.fetchData().done { todos in
-            // Handle the todos data
-            debugPrint("\n fetchedData) = \(todos)")
-            self.updateUI()
-        }.catch { error in
-            // Handle the error
-            print("Error fetching data: \(error)")
-        }.finally {
-            self.hideLoadingIndicator()
-        }
+        getList()
     }
     
     //MARK: - Private
@@ -67,6 +56,22 @@ class ViewController: UIViewController {
     private  func updateUI() {
         // Reload UITableView to reflect the updated data
         tableView.reloadData()
+    }
+    
+    //MARK: - API calls
+    
+    internal func getList() {
+        // Example usage:
+        viewModel.fetchData().done { todos in
+            // Handle the todos data
+            debugPrint("\n fetchedData) = \(todos)")
+            self.updateUI()
+        }.catch { error in
+            // Handle the error
+            print("Error fetching data: \(error)")
+        }.finally {
+            self.hideLoadingIndicator()
+        }
     }
 
 }
