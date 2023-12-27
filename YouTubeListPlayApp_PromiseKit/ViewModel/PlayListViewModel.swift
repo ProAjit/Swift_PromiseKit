@@ -10,12 +10,14 @@ import PromiseKit
 
 protocol TodoViewModelProtocol {
     var todos: [Todo] { get }
+    var isLoading: Bool { get set }
     func fetchData() -> Promise<[TodoItem]>
 }
 
 class TodoViewModel: TodoViewModelProtocol {
     
     var todos: [Todo] = []
+    var isLoading: Bool = false
 
     func fetchData() -> Promise<[TodoItem]> {
           return Promise { seal in
@@ -27,14 +29,17 @@ class TodoViewModel: TodoViewModelProtocol {
                   
                 guard let data = data, let result = try? JSONDecoder().decode([TodoItem].self, from: data) else {
                   seal.reject(error ?? UserError.invalidData)
+                  self.isLoading = false
                   return
                 }
                 self.todos = result
+                self.isLoading = false
                 seal.fulfill(result)
                   
               }.resume()
         }
     }
+    
 }
 
 
