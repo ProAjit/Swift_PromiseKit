@@ -1,0 +1,112 @@
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "s-aqWR1CKn3X8O2wwD1hTwczEO8",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "v4PxjhUpgNEf4RBHjodtqxMMQEo",
+      "id": "UExONUIyTkx5bjlEUXVnRjFWelRLMmsyOVFFTnJ3VUFIUi41NkI0NEY2RDEwNTU3Q0M2",
+      "snippet": {
+        "publishedAt": "2023-12-26T17:57:25Z",
+        "channelId": "UCD15Npe8sCvmKiJxJLpNQxQ",
+        "title": "iOS Dev Job Interview - Must Know Topics",
+        "description": "I put together a collection of my best iOS Developer job interview topic videos to help you prepare for your interview. It's impossible to know what questions will be asked during an interview, but these topics are VERY commonly asked about:\n\nTopics covered:\n- Network Calls\n- Classes vs. Structs\n- Generics\n- Closures\n- Filter, Map, Reduce\n- Array vs. Set\n- Unwrapping Optionals\n- Unit Tests\n- Singletons\n- Dependency Injection\n- Delegates & Protocols (UIKit)\n- View Lifecycle (UIKit)\n- Concurrency & Threading\n- ARC & Retain Cycles (UIKit)\n\nMy iOS Dev Courses:\nhttps://seanallen.teachable.com/\n\nTwitter:\nSean Allen - https://twitter.com/seanallen_dev\n\nHired.com:\nhttps://hired.com/x/1n01g\n\nBook and learning recommendations that help out the channel if you decide to purchase (Affiliate Links):\n\nPaul Hudson's Hacking With Swift:\nhttps://gumroad.com/a/762098803\n\nDonny Wals - Combine:\nhttps://gumroad.com/a/909014131\n\nMark Moeyken’s SwiftUI Books:\nwww.bigmountainstudio.com/swiftui-views-book/fzc51\n\nObjc.io Books (Thinking in SwiftUI & Advanced Swift):\nhttps://gumroad.com/a/656585843\n\nTimestamps:\n0:00 - Network Calls\n24:56 - Classes vs. Structs\n31:22 - Generics\n41:01 - Closures\n54:31 - Filter, Map, Reduce\n1:07:15 - Array vs. Set\n1:15:57 - Unwrapping Optionals\n1:29:18 - Unit Tests\n1:45:56 - Singletons\n1:50:56 - Dependency Injection\n1:56:56 - Delegates & Protocols (UIKit)\n2:06:47 - View Lifecycle (UIKit)\n2:13:49 - Concurrency & Threading\n2:21:12 - ARC & Retain Cycles (UIKit)\n\n#swift #softwaredeveloper #iosdeveloper",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/XTAziR-tY-A/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/XTAziR-tY-A/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/XTAziR-tY-A/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/XTAziR-tY-A/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/XTAziR-tY-A/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Ajit Satarkar",
+        "playlistId": "PLN5B2NLyn9DQugF1VzTK2k29QENrwUAHR",
+        "position": 0,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "XTAziR-tY-A"
+        },
+        "videoOwnerChannelTitle": "Sean Allen",
+        "videoOwnerChannelId": "UCbTw29mcP12YlTt1EpUaVJw"
+      },
+      "contentDetails": {
+        "videoId": "XTAziR-tY-A",
+        "videoPublishedAt": "2023-07-03T12:28:06Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "644oAHvA4GK_cxYmRPNAiCKPVvw",
+      "id": "UExONUIyTkx5bjlEUXVnRjFWelRLMmsyOVFFTnJ3VUFIUi4yODlGNEE0NkRGMEEzMEQy",
+      "snippet": {
+        "publishedAt": "2023-12-26T17:57:39Z",
+        "channelId": "UCD15Npe8sCvmKiJxJLpNQxQ",
+        "title": "MVVM + Dependency Injection in Swift | Unit Testing | iOS",
+        "description": "In this video, I’ve explained MVVM architecture along with Dependency Injection. Why should we use MVVM, different ways of implementing MVVM (Protocol-Delegate, Closure, Property Observers (Box Technique), FRP - Rx, Combine), good and bad practices for MVVM, Unit Testing, Code Coverage, Segregation of Entities, Sample Project and everything else that you should know about MVVM. \n\nRayWender's Tutorial - https://www.raywenderlich.com/6733535-ios-mvvm-tutorial-refactoring-from-mvc\n\nSource Code for the Project - https://drive.google.com/file/d/1ToDQ2itp5YbPnTU3BD7sb-YvM0OKtB-R/view?usp=sharing\n\nChapters 👇🏼\n00:00 Start\n01:58 MVVM Theory\n04:20 Good Practices for writing ViewModel\n07:15 Communication between View and ViewModel\n08:13 Implementation of MVVM\n20:57 Dependency Injection\n25:24 Unit Testing",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Q1sjLDQMNzU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Q1sjLDQMNzU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Q1sjLDQMNzU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Q1sjLDQMNzU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Q1sjLDQMNzU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Ajit Satarkar",
+        "playlistId": "PLN5B2NLyn9DQugF1VzTK2k29QENrwUAHR",
+        "position": 1,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "Q1sjLDQMNzU"
+        },
+        "videoOwnerChannelTitle": "iCode",
+        "videoOwnerChannelId": "UCOxWz0sV0k8npsexeG7cuAQ"
+      },
+      "contentDetails": {
+        "videoId": "Q1sjLDQMNzU",
+        "videoPublishedAt": "2021-09-13T05:02:58Z"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 2,
+    "resultsPerPage": 25
+  }
+}
