@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5C19F102B3C827000BBCD06 /* YouTubeList.json in Resources */ = {isa = PBXBuildFile; fileRef = B5C19F0F2B3C827000BBCD06 /* YouTubeList.json */; };
+		B5C19F112B3C827000BBCD06 /* YouTubeList.json in Resources */ = {isa = PBXBuildFile; fileRef = B5C19F0F2B3C827000BBCD06 /* YouTubeList.json */; };
 		B5E1EA4E2B3B2F43008D6774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E1EA4D2B3B2F43008D6774 /* AppDelegate.swift */; };
 		B5E1EA502B3B2F43008D6774 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E1EA4F2B3B2F43008D6774 /* SceneDelegate.swift */; };
 		B5E1EA522B3B2F43008D6774 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E1EA512B3B2F43008D6774 /* ViewController.swift */; };
@@ -39,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B5C19F0F2B3C827000BBCD06 /* YouTubeList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = YouTubeList.json; sourceTree = "<group>"; };
 		B5E1EA4A2B3B2F43008D6774 /* YouTubeListPlayApp_PromiseKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeListPlayApp_PromiseKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E1EA4D2B3B2F43008D6774 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5E1EA4F2B3B2F43008D6774 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,12 +110,13 @@
 			children = (
 				B5E1EA842B3B41E4008D6774 /* App_LifeCycle */,
 				B5E1EA852B3B41FB008D6774 /* Model */,
-				B5E1EA862B3B4201008D6774 /* ViewModel */,
 				B5E1EA872B3B420C008D6774 /* View */,
-				B5E1EA532B3B2F43008D6774 /* Main.storyboard */,
+				B5E1EA862B3B4201008D6774 /* ViewModel */,
 				B5E1EA562B3B2F46008D6774 /* Assets.xcassets */,
-				B5E1EA582B3B2F46008D6774 /* LaunchScreen.storyboard */,
+				B5C19F0F2B3C827000BBCD06 /* YouTubeList.json */,
 				B5E1EA5B2B3B2F46008D6774 /* Info.plist */,
+				B5E1EA532B3B2F43008D6774 /* Main.storyboard */,
+				B5E1EA582B3B2F46008D6774 /* LaunchScreen.storyboard */,
 			);
 			path = YouTubeListPlayApp_PromiseKit;
 			sourceTree = "<group>";
@@ -278,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5E1EA5A2B3B2F46008D6774 /* LaunchScreen.storyboard in Resources */,
+				B5C19F102B3C827000BBCD06 /* YouTubeList.json in Resources */,
 				B5E1EA572B3B2F46008D6774 /* Assets.xcassets in Resources */,
 				B5E1EA552B3B2F43008D6774 /* Main.storyboard in Resources */,
 			);
@@ -287,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5C19F112B3C827000BBCD06 /* YouTubeList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
