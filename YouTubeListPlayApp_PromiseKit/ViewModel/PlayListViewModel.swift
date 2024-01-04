@@ -14,21 +14,18 @@ protocol TodoViewModelProtocol {
     func fetchData() -> Promise<[TodoItem]>
 }
 
-class TodoViewModel: TodoViewModelProtocol {
+final class TodoViewModel: TodoViewModelProtocol {
     
-    var todos: [Todo] = []
+    private(set) var todos: [Todo] = []
     var isLoading: Bool = false
 
     func fetchData() -> Promise<[TodoItem]> {
         
-        let urlString = "https://jsonplaceholder.typicode.com/todos"
-        
         return Promise { seal in
-            guard let url = URL(string: urlString) else {
+            guard let url = URL(string: APIEndpoints.urlString) else {
                seal.reject(UserError.invalidURL)
                return
             }
-            
             URLSession.shared.dataTask(with: url) { data, _, error in
               guard let data = data, let result = try? JSONDecoder().decode([TodoItem].self, from: data) else {
                 seal.reject(error ?? UserError.invalidData)
@@ -38,7 +35,6 @@ class TodoViewModel: TodoViewModelProtocol {
               self.todos = result
               self.isLoading = false
               seal.fulfill(result)
-                
             }.resume()
         }
     }
@@ -67,4 +63,8 @@ enum UserError: LocalizedError {
             return error.localizedDescription
         }
     }
+}
+
+struct APIEndpoints {
+    static let urlString = "https://jsonplaceholder.typicode.com/todos"
 }
